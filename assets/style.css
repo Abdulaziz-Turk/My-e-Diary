@@ -1,0 +1,172 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/bg.jpg");
+  background-size: cover;
+  height: 90vh;
+}
+.main-btn {
+  background-color: #ee4f4f;
+  color: #ffc400;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.main-btn:hover {
+  background-color: #ffc400;
+  color: #003865;
+}
+.main {
+  background-color: rgba(0, 0, 0, 0.3);
+  min-height: 100vh;
+}
+.navbar {
+  background-color: #003865;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  max-width: 1300px !important;
+  height: 90vh;
+}
+
+.title-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.title-container h1 {
+  font-size: 60px;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.select-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+  height: 480px;
+  width: 600px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-radius 0.3s;
+}
+
+.select-container > div:hover {
+  background-color: hsla(207, 100%, 20%, 0.675);
+  border-radius: 16px;
+}
+
+.select-container img {
+  max-width: 100%;
+  margin: 10px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #003865;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.login-container h1 {
+  font-size: 2.75rem;
+  margin-bottom: 20px;
+}
+.login-container > form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+.login-container button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-color: #ee4f4f;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.login-container button:hover {
+  background-color: #ffc400;
+}
+
+.write-diary-container,
+.read-diary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  height: auto;
+  width: 100%;
+  background-color: #003865a6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.write-diary-container textarea,
+.write-diary-container input {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 1.2rem;
+  width: 100%;
+  border-radius: 5px;
+  resize: none;
+}
+.write-diary-container button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-color: #ee4f4f;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.write-diary-container button:hover {
+  background-color: #ffc400;
+}
+
+.read-diary-container {
+  overflow-y: auto;
+}
+.read-diary-container .card {
+  background-color: #fff;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  font-size: 1.2rem;
+  margin-top: 200px;
+}
